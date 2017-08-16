@@ -68,7 +68,7 @@
             <div class="cell_wrap_b">
                 <div class="cell_wrap_container">
                     <a class="case_img" href="#this">
-                        <img src="10副本.jpg" />
+                        <img class="pimg" src="10副本.jpg" />
                     </a>
                 </div>
                 <div class="cf case_txt">
@@ -82,7 +82,7 @@
             <div class="cell_wrap_b">
                 <div class="cell_wrap_container">
                     <a class="case_img" href="#this">
-                        <img src="images/eq/case.png" />
+                        <img class="pimg" src="images/eq/case.png" />
                     </a>
                 </div>
                 <div class="cf case_txt">
@@ -96,7 +96,7 @@
             <div class="cell_wrap_b">
                 <div class="cell_wrap_container">
                     <a class="case_img" href="#this">
-                        <img src="images/eq/case.png" />
+                        <img class="pimg" src="images/eq/case.png" />
                     </a>
                 </div>
                 <div class="cf case_txt">
@@ -196,6 +196,15 @@
 <div class="footer">
 	
 </div>
+
+<script>  
+    $(function(){  
+        $(".pimg").click(function(){  
+            var _this = $(this);//将当前的pimg元素作为_this传入函数  
+            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);  
+        });  
+    });  
+</script>  
 
 </body>
 </html>
