@@ -293,7 +293,7 @@ input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, i
 .cell_wrap_case{float:left;height:222px;margin:0 10px 35px 10px;border:1px solid #f9f9f9;}
 .cell_wrap_case:hover , .cell_wrap_case:hover .cell_wrap_b{border:1px solid #ff8b00;}
 .case_list .cell_wrap_container{padding:0;}
-.case_img{display:block;width:240px;height:170px;}
+.case_img{display:block;width:400px;height:400px;}
 .case_img img{width:100%;}
 .case_txt{height:30px;line-height:40px;}
 .case_name , .case_txt a{color:#777777;display:block;width:140px;}
