@@ -67,7 +67,7 @@
     	<div class="cell_wrap cell_wrap_case">
             <div class="cell_wrap_b">
                 <div class="cell_wrap_container">
-                    <a class="case_img" href="10副本.jpg">
+                    <a id=“ex1” class="case_img" href="10副本.jpg">
                         <img src="10副本.jpg" />
                     </a>
                 </div>
@@ -196,15 +196,21 @@
 <div class="footer">
 	
 </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#ex1").imgbox();
+	$("#ex2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
 
-<script>  
-    $(function(){  
-        $(".pimg").click(function(){  
-            var _this = $(this);//将当前的pimg元素作为_this传入函数  
-            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);  
-        });  
-    });  
-</script>  
 
 </body>
 </html>
